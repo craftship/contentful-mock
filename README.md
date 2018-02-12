@@ -9,8 +9,8 @@ Its main aims are to help provide a simple way to mock out data as well as suppo
 
 ### Getting Started
 
-* Create a folder in the root of you project `.contentful`
-* Add entry data as YAML files into a folder called `entries`
+* Create a folder in the root of your project called `.contentful` ([example](https://github.com/craftship/contentful-mock/tree/master/example/.contentful/entries) here)
+* Run the server
 
 More info soon...
 
