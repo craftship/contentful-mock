@@ -1,0 +1,28 @@
+{
+  "name": "contentful-mock",
+  "version": "0.0.1",
+  "description": "A mock implementation of the contentful API",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Craftship Ltd <hello@craftship.io>",
+  "scripts": {
+    "start:dev": "CONTENTFUL_MOCK_DIR=$(pwd)/example/.contentful babel-watch ./example",
+    "start": "node .",
+    "build": "rm -rf ./dist/* && BABEL_ENV=node babel ./src -d ./dist --copy-files",
+    "prettier": "prettier ./src/**/*.js --write"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "js-yaml": "^3.10.0",
+    "nedb-promise": "^2.0.1",
+    "shortid": "^2.2.8"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-watch": "^2.0.7",
+    "husky": "^0.14.3",
+    "prettier": "1.10.2"
+  }
+}
