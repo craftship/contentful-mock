@@ -9,7 +9,7 @@
     "start:dev": "CONTENTFUL_MOCK_DIR=$(pwd)/tests/.contentful babel-watch ./src",
     "test": "jest tests/**/*.js",
     "prepare": "rm -rf ./dist/* && BABEL_ENV=node babel ./src -d ./dist --copy-files",
-    "prettier": "prettier ./src/**/*.js --write"
+    "prettier": "prettier ./src/**/*.js ./tests/**/*.js --write"
   },
   "dependencies": {
     "cors": "^2.8.4",
