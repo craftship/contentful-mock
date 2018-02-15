@@ -6,12 +6,14 @@
   "license": "MIT",
   "author": "Craftship Ltd <hello@craftship.io>",
   "scripts": {
-    "start:dev": "CONTENTFUL_MOCK_DIR=$(pwd)/example/.contentful babel-watch ./example",
+    "start:dev": "CONTENTFUL_MOCK_DIR=$(pwd)/tests/.contentful babel-watch ./src",
+    "test": "jest tests/**/*.js",
     "start": "node .",
     "build": "rm -rf ./dist/* && BABEL_ENV=node babel ./src -d ./dist --copy-files",
     "prettier": "prettier ./src/**/*.js --write"
   },
   "dependencies": {
+    "cors": "^2.8.4",
     "express": "^4.16.2",
     "js-yaml": "^3.10.0",
     "nedb-promise": "^2.0.1",
@@ -22,7 +24,9 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-watch": "^2.0.7",
+    "contentful": "^5.1.1",
     "husky": "^0.14.3",
+    "jest": "^22.3.0",
     "prettier": "1.10.2"
   }
 }
