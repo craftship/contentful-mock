@@ -2,7 +2,7 @@ import express from "express";
 import spaces from "./spaces";
 
 const PATH = {
-  SPACES: "/spaces/:spaceId"
+  SPACES: "/spaces"
 };
 
 const router = express.Router({ mergeParams: true });

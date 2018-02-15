@@ -1,13 +1,13 @@
 import express from "express";
-import { getEntries } from "./entries";
+import entries from "./entries";
 
 const PATH = {
-  ENTRIES: "/entries",
-  ENTRY: "/entries/:entryId"
+  SPACE: "/:spaceId",
+  ENTRIES: "/:spaceId/entries",
 };
 
 const router = express.Router({ mergeParams: true });
 
-router.get(PATH.ENTRIES, getEntries);
+router.use(PATH.ENTRIES, entries);
 
 export default router;

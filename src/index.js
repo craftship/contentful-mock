@@ -1,3 +1,4 @@
+import { join } from 'path';
 import server from "./server";
 
-export default path => server(path);
+server(process.env.CONTENTFUL_MOCK_DIR || join(__dirname, '.contentful'));

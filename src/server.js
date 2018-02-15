@@ -1,5 +1,5 @@
-import { join } from "path";
 import { createSession } from "./session";
+import cors from 'cors';
 import defaultExpress from "express";
 import defaultApi from "./api";
 
@@ -12,6 +12,7 @@ export default (
   api = defaultApi
 ) => {
   const app = express();
+  app.use(cors());
 
   const session = createSession(path);
 
@@ -23,6 +24,6 @@ export default (
 
   app.use(api);
   app.listen(port, () => {
-    console.log("Contentful Mock Server Started");
+    console.log(`Contentful Mock Server Started | ${port}`);
   });
 };

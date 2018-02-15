@@ -1,7 +1,7 @@
-import { SYS, PAGINATION } from "../utils";
-import { getSessionBySpace } from "../../session";
+import { getSessionBySpace } from '../../../session';
+import { SYS, PAGINATION } from '../../utils';
 
-export const getEntries = async (req, res) => {
+export default async (req, res) => {
   const db = getSessionBySpace(req.session.space);
   const items = await db.entries.find({});
 

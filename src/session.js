@@ -63,8 +63,10 @@ const convertYaml = file => {
 const generateEntries = (store, entries) => {
   entries.forEach(async e => {
     const json = convertYaml(e);
+    const id = json.sys.id || shortid.generate();
     const doc = {
-      id: shortid.generate(),
+      _id: id,
+      id,
       ...json
     };
 
