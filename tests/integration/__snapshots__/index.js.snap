@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gets all entries 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "_id": "foo",
+      "fields": Object {
+        "boolean": true,
+        "dateExample": "2018-02-13T00:00+00:00",
+        "locationExample": Object {
+          "lat": 52.20171539256484,
+          "lon": 11.5576171875,
+        },
+        "name": "Event 1",
+        "numberExample": 1234,
+      },
+      "id": "foo",
+      "sys": Object {
+        "contentType": Object {
+          "sys": Object {
+            "id": "event",
+            "linkType": "ContentType",
+            "type": "Link",
+          },
+        },
+        "createdAt": "2018-02-12T17:52:36.345Z",
+        "id": "foo",
+        "locale": "en-GB",
+        "revision": 2,
+        "space": Object {
+          "sys": Object {
+            "id": "5stqoszspr9f",
+            "linkType": "Space",
+            "type": "Link",
+          },
+        },
+        "type": "Entry",
+        "updatedAt": "2018-02-12T18:55:10.396Z",
+      },
+    },
+    Object {
+      "_id": "rkgqdJFQDf",
+      "fields": Object {
+        "boolean": true,
+        "dateExample": "2018-02-13T00:00+00:00",
+        "locationExample": Object {
+          "lat": 52.20171539256484,
+          "lon": 11.5576171875,
+        },
+        "name": "Event 2",
+        "numberExample": 1234,
+      },
+      "id": "rkgqdJFQDf",
+      "sys": Object {
+        "contentType": Object {
+          "sys": Object {
+            "id": "event",
+            "linkType": "ContentType",
+            "type": "Link",
+          },
+        },
+        "createdAt": "2018-02-12T17:52:36.345Z",
+        "locale": "en-GB",
+        "revision": 2,
+        "space": Object {
+          "sys": Object {
+            "linkType": "Space",
+            "type": "Link",
+          },
+        },
+        "type": "Entry",
+        "updatedAt": "2018-02-12T18:55:10.396Z",
+      },
+    },
+  ],
+  "limit": 0,
+  "skip": 0,
+  "sys": Object {
+    "type": "Array",
+  },
+  "total": 2,
+}
+`;
+
+exports[`Gets entry 1`] = `
+Object {
+  "_id": "foo",
+  "fields": Object {
+    "boolean": true,
+    "dateExample": "2018-02-13T00:00+00:00",
+    "locationExample": Object {
+      "lat": 52.20171539256484,
+      "lon": 11.5576171875,
+    },
+    "name": "Event 1",
+    "numberExample": 1234,
+  },
+  "id": "foo",
+  "sys": Object {
+    "contentType": Object {
+      "sys": Object {
+        "id": "event",
+        "linkType": "ContentType",
+        "type": "Link",
+      },
+    },
+    "createdAt": "2018-02-12T17:52:36.345Z",
+    "id": "foo",
+    "locale": "en-GB",
+    "revision": 2,
+    "space": Object {
+      "sys": Object {
+        "id": "5stqoszspr9f",
+        "linkType": "Space",
+        "type": "Link",
+      },
+    },
+    "type": "Entry",
+    "updatedAt": "2018-02-12T18:55:10.396Z",
+  },
+}
+`;
