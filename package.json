@@ -8,8 +8,7 @@
   "scripts": {
     "start:dev": "CONTENTFUL_MOCK_DIR=$(pwd)/tests/.contentful babel-watch ./src",
     "test": "jest tests/**/*.js",
-    "start": "node .",
-    "build": "rm -rf ./dist/* && BABEL_ENV=node babel ./src -d ./dist --copy-files",
+    "prepare": "rm -rf ./dist/* && BABEL_ENV=node babel ./src -d ./dist --copy-files",
     "prettier": "prettier ./src/**/*.js --write"
   },
   "dependencies": {
@@ -28,5 +27,8 @@
     "husky": "^0.14.3",
     "jest": "^22.3.0",
     "prettier": "1.10.2"
+  },
+  "bin": {
+    "contentful-mock": "bin/start"
   }
 }
