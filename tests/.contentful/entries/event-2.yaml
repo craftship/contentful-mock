@@ -1,9 +1,11 @@
 ---
 sys:
+  id: bar
   space:
     sys:
       type: Link
       linkType: Space
+      id: 5stqoszspr9f
   type: Entry
   createdAt: '2018-02-12T17:52:36.345Z'
   updatedAt: '2018-02-12T18:55:10.396Z'
